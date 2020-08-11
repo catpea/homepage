@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-ROOT='./.src';
-if [ -d $ROOT ]; then
+ROOT='./.sources';
+if [ ! -d $ROOT ]; then
   mkdir -p $ROOT;
 fi;
 
@@ -20,12 +20,12 @@ do
   if [ -d $target ]; then
     echo Repository $target does exist entering $target for pulling;
     cd $target;
-    #git pull;
+    git pull;
     cd -
   else
     echo Repository $target does not exist entering $ROOT for cloning;
     cd $ROOT;
-    #git clone --depth 1 "${url}" "${name}";
+    git clone --depth 1 "${url}" "${name}";
     cd -
   fi
 done
