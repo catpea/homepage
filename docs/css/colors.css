@@ -1,0 +1,30 @@
+body {
+  /* background-color: var(--gray-dark); */
+}
+
+.container {
+  /* background-color: var(--cyan); */
+}
+
+/* .bg1 {
+  background: url('/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, rgba(20,45,51,1) 0%,rgba(46,79,91,1) 100%);
+}
+
+.bg1 {
+  background: linear-gradient(135deg, rgba(20,45,51,1) 0%,rgba(46,79,91,1) 100%);
+}
+
+.bg2 {
+  background: linear-gradient(to bottom, rgba(181,189,200,0.57) 0%,rgba(130,140,149,0.56) 36%,rgba(40,52,59,0.55) 100%);
+}
+.bg3 {
+  background: linear-gradient(135deg, rgba(14,30,34,1) 0%,rgba(32,54,62,1) 100%);
+}
